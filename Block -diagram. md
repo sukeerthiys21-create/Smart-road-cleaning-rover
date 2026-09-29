@@ -1,0 +1,26 @@
+# Block Diagram – Smart Road Cleaning Rover
+
+## System Architecture
+
+```mermaid
+flowchart TD
+    A[Battery / Power Supply] --> B[ESP32 Controller]
+    B --> C[Motor Driver]
+    C --> D[Drive Motors and Wheels]
+    B --> E[Cleaning Motor]
+    E --> F[Rotating Brush / Roller]
+    B --> G[Ultrasonic Sensor]
+    G --> B
+    B --> H[Bluetooth / Wi-Fi Control]
+``` 
+
+## Description
+
+- The battery supplies power to the rover.
+- The ESP32 acts as the main controller.
+- The motor driver controls the drive motors.
+- The cleaning motor rotates the brush or roller to collect waste.
+- The ultrasonic sensor detects nearby obstacles.
+- Bluetooth or Wi-Fi can be used for wireless control.
+
+*Note: This is a conceptual block diagram. The actual wiring depends on the components used.*
